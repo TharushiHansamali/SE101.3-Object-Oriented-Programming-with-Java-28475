@@ -27,6 +27,7 @@ abstract class Student {
     abstract void display();
 }
 
+
 Q2)
 package com.mycompany.interfaceobj;
 public class InterfaceObj 

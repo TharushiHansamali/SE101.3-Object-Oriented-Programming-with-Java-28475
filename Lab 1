@@ -1,1 +1,135 @@
 
+Q1)
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+Q2)
+public class Aboutme{
+    public static void main(String[] args) {
+        System.out.println("Name: Tharushi Hansamali");
+        System.out.println("Degree Program: Bsc in Management Information Systems");
+    }
+}
+Q3)
+public class ForLoopExample {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Executing Loop " + i);
+        }
+    }
+}
+Q4)
+public class LoopExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        for (int x : numbers) {
+            if (x == 30) {
+                break;
+            }
+            System.out.print(x);
+            System.out.print("\n");
+        }
+        System.out.print("I'm out of the Loop now");
+    }
+}
+//using continue
+public class LoopExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        for (int x : numbers) {
+            if (x == 30) {
+                continue;
+            }
+            System.out.print(x);
+            System.out.print("\n");
+        }
+        System.out.print("I'm out of the Loop now");
+    }
+}
+Q5)
+public class GradeChecker {
+    public static void main(String[] args) {
+        char grade = 'A';
+
+        switch (grade) {
+            case 'A':
+                System.out.println("Excellent!");
+                break;
+
+            case 'D':
+                System.out.println("You passed");
+            case 'F':
+                System.out.println("Better try again");
+                break;
+
+            default:
+                System.out.println("Invalid grade");
+        }
+
+        System.out.println("Your grade is " + grade);
+    }
+}
+
+public class GradeChecker {
+    public static void main(String[] args) {
+        char grade = 'A';
+
+        switch (grade) {
+            case 'A':
+                System.out.println("Excellent!");
+            case 'D':
+                System.out.println("You passed");
+            case 'F':
+                System.out.println("Better try again");
+                break;
+            default:
+                System.out.println("Invalid grade");
+        }
+
+        System.out.println("Your grade is " + grade);
+    }
+}
+
+public class GradeChecker {
+    public static void main(String[] args) {
+        char grade = 'A';
+
+        if (grade == 'A') {
+            System.out.println("Excellent!");
+        } else if (grade == 'D') {
+            System.out.println("You passed");
+            // No break needed here because we are using else-if statements.
+        } else if (grade == 'F') {
+            System.out.println("Better try again");
+        } else {
+            System.out.println("Invalid grade");
+        }
+
+        System.out.println("Your grade is " + grade);
+    }
+}
+Q6)
+class TestEnhancedForLoop {
+    public static void main(String args[]) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        for (int x : numbers) {
+            System.out.print(x);
+            System.out.print(","); // Add missing semicolon here
+        }
+        System.out.print("\n");
+        String[] names = {"James", "Larry", "Tom", "Lacy"}; // Corrected the quotation marks here
+        for (String name : names) {
+            System.out.print(name);
+            System.out.print(",");
+        }
+    }
+}
+
+Output:
+10,20,30,40,50,
+James,Larry,Tom,Lacy,
+

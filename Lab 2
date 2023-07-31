@@ -1,1 +1,339 @@
 
+	Q1)
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getter for location
+    protected int getLocation() {
+        return location;
+    }
+
+    // Setter for location
+    protected void setLocation(int location) {
+        this.location = location;
+    }
+
+    // Getter for description
+    protected String getDescription() {
+        return description;
+    }
+
+    // Setter for description
+    protected void setDescription(String description) {
+        this.description = description;
+    }
+}
+Q2)
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor with arguments
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getter and Setter methods
+protected int getLocation() {
+        return location;
+    }
+protected void setLocation(int location) {
+        this.location = location;
+    }
+protected String getDescription() {
+        return description;
+    }
+protected void setDescription(String description) {
+        this.description = description;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an Item object with a location of 1 and description "Example Item"
+        Item item = new Item(1, "Example Item");
+
+        // Accessing the protected instance variables using getter methods
+        int location = item.getLocation();
+        String description = item.getDescription();
+
+        System.out.println("Location: " + location);
+        System.out.println("Description: " + description);
+    }
+}
+Q3)
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor with arguments
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getter and Setter methods 
+
+    
+    protected int getLocation() {
+        return location;
+    }
+
+   
+    protected void setLocation(int location) {
+        this.location = location;
+    }
+
+    
+    protected String getDescription() {
+        return description;
+    }
+
+    
+    protected void setDescription(String description) {
+        this.description = description;
+    }
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an Item object with a location of 1 and description "Example Item"
+        Item item = new Item(1, "Example Item");
+
+        // Accessing the protected instance variables using getter methods
+        int location = item.getLocation();
+        String description = item.getDescription();
+
+        System.out.println("Location: " + location);
+        System.out.println("Description: " + description);
+    }
+}
+
+Q4)
+
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor with arguments
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getter for location
+    public int getLocation() {
+        return location;
+    }
+
+    // Setter for location
+    public void setLocation(int location) {
+        this.location = location;
+    }
+
+    // Getter for description
+    public String getDescription() {
+        return description;
+    }
+
+    // Setter for description
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        // Creating an Item object with a location of 1 and description "Example Item"
+        Item item = new Item(1, "Example Item");
+
+        // Using setter methods to modify the properties
+        item.setLocation(2);
+        item.setDescription("Updated Item");
+
+        // Using getter methods to access the properties
+        int location = item.getLocation();
+        String description = item.getDescription();
+
+        System.out.println("Location: " + location);
+        System.out.println("Description: " + description);
+    }
+}
+
+Q5)
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor with arguments
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getter and Setter methods
+    public int getLocation() {
+        return location;
+    }
+
+    public void setLocation(int location) {
+        this.location = location;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
+
+public class Monster extends Item {
+    private int health;
+
+    // Constructor with arguments
+    public Monster(int location, String description, int health) {
+        super(location, description);
+        this.health = health;
+    }
+
+    // Getter and Setter for health
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+}
+
+Q6)
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor with arguments
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getter and Setter methods
+
+    
+    protected int getLocation() {
+        return location;
+    }
+
+   
+    protected void setLocation(int location) {
+        this.location = location;
+    }
+
+    
+    protected String getDescription() {
+        return description;
+    }
+
+    
+    protected void setDescription(String description) {
+        this.description = description;
+    }
+
+}
+
+public class Monster extends Item {
+    private int health;
+
+    // Constructor with arguments
+    public Monster(int location, String description, int health) {
+        super(location, description);
+        this.health = health;
+    }
+
+    // Getter and Setter for health
+public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+    // Constructor with integer and string arguments
+    public Monster(int location, String description) {
+        super(location, description);
+        // Default health value, you can set it according to your needs
+        this.health = 100;
+    }
+}
+
+Q7)
+public class Item {
+    protected int location;
+    protected String description;
+
+    // Constructor with arguments
+    public Item(int location, String description) {
+        this.location = location;
+        this.description = description;
+    }
+
+   
+ // Getter and Setter methods
+
+    
+    protected int getLocation() {
+        return location;
+    }
+
+   
+    protected void setLocation(int location) {
+        this.location = location;
+    }
+
+    
+    protected String getDescription() {
+        return description;
+    }
+
+    
+    protected void setDescription(String description) {
+        this.description = description;
+    }
+
+}
+
+public class Monster extends Item {
+    private int health;
+
+    // Constructor with arguments
+    public Monster(int location, String description, int health) {
+        super(location, description); // Calling the superclass constructor using super()
+        this.health = health;
+    }
+
+    // Getter and Setter for health
+public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+    // Constructor with integer and string arguments
+    public Monster(int location, String description) {
+        super(location, description); // Calling the superclass constructor using super()
+        // Default health value, you can set it according to your needs
+        this.health = 100;
+    }
+}
+

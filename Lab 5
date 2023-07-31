@@ -1,1 +1,31 @@
+Q1)
+
+public interface MyFirstInterface {
+    int x = 10; // Interface variable (implicitly public, static, and final)
+
+    void display(); // Abstract method (implicitly public and abstract)
+}
+
+public class InterfaceImplemented implements MyFirstInterface {
+    // Implementing the abstract method from the interface
+    @Override
+    public void display() {
+        // Try to change the value of x inside this method
+        // Uncomment the line below to see the error
+        // x = 20; // Error: The final field MyFirstInterface.x cannot be assigned
+        System.out.println("Value of x: " + x);
+    }
+}
+Q3)
+final class Student {
+    final int marks = 100;
+    final void display();
+}
+
+abstract class Student {
+    final int marks = 100;
+    abstract void display();
+}
+
+
 

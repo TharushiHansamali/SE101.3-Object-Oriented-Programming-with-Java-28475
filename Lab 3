@@ -1,1 +1,187 @@
 
+Q1)
+public class Employee {
+    private String name;
+    private int age;
+    private double salary;
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+}
+
+public class Employee {
+    private String name;
+    private int age;
+    private double salary;
+
+    // Constructor
+    public Employee(String name, int age, double salary) {
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+public class EmployeeTest {
+    public static void main(String[] args) {
+        // Using constructor to create an Employee object
+        Employee emp1 = new Employee("John Doe", 30, 50000.0);
+
+        // Accessing values using getters
+        System.out.println("Name: " + emp1.getName());
+        System.out.println("Age: " + emp1.getAge());
+        System.out.println("Salary: " + emp1.getSalary());
+    }
+}
+Q2)
+public class Employee {
+    private String name;
+    private double basicSalary;
+    private double bonus;
+
+    // Constructor with bonus argument
+    public Employee(String name, double basicSalary, double bonus) {
+        this.name = name;
+        this.basicSalary = basicSalary;
+        this.bonus = bonus;
+    }
+
+    // Getter and Setter for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter and Setter for basicSalary
+    public double getBasicSalary() {
+        return basicSalary;
+    }
+
+    public void setBasicSalary(double basicSalary) {
+        this.basicSalary = basicSalary;
+    }
+
+    // Getter for bonus (no setter as it is set via constructor)
+    public double getBonus() {
+        return bonus;
+    }
+
+    // Method to calculate total salary (basic salary + bonus)
+    public double getTotalSalary() {
+        return basicSalary + bonus;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an Employee object using the constructor with bonus argument
+        Employee employee = new Employee("John Doe", 50000.0, 10000.0);
+
+        // Using getters to retrieve the values
+        System.out.println("Employee Name: " + employee.getName());
+        System.out.println("Basic Salary: " + employee.getBasicSalary());
+        System.out.println("Bonus: " + employee.getBonus());
+
+        // Calculating and displaying the total salary
+        System.out.println("Total Salary: " + employee.getTotalSalary());
+    }
+}
+
+Q3)
+public class Employee {
+    private String name;
+    private double basicSalary;
+    private double bonus;
+
+    // Constructor with bonus argument
+    public Employee(String name, double basicSalary, double bonus) {
+        this.name = name;
+        this.basicSalary = basicSalary;
+        this.bonus = bonus;
+    }
+
+    // Getter and Setter for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter and Setter for basicSalary
+    public double getBasicSalary() {
+        return basicSalary;
+    }
+
+    public void setBasicSalary(double basicSalary) {
+        this.basicSalary = basicSalary;
+    }
+
+    // Getter for bonus (no setter as it is set via constructor)
+    public double getBonus() {
+        return bonus;
+    }
+
+    // Method to calculate total salary (basic salary + bonus)
+    public double getTotalSalary() {
+        return basicSalary + bonus;
+    }
+
+    // Method to calculate bonus amount (total of basic salary and bonus)
+    public double calculateBonusAmount() {
+        return basicSalary + bonus;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        // Creating an Employee object using the constructor with bonus argument
+        Employee employee = new Employee("Bogdan", 50000.0, 10000.0);
+
+        // Using getters to retrieve the values
+        System.out.println("Employee Name: " + employee.getName());
+        System.out.println("Basic Salary: " + employee.getBasicSalary());
+        System.out.println("Bonus: " + employee.getBonus());
+
+        // Calculating and displaying the bonus amount
+        System.out.println("Bonus Amount: " + employee.calculateBonusAmount());
+    }
+}
+

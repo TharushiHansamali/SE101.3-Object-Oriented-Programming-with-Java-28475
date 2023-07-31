@@ -1,1 +1,188 @@
+Q1)
+public class Employee {
+    private int empID;
+    private String empName;
+    private String empDesignation;
+
+    // Getters and Setters for empID
+    public int getEmpID() {
+        return empID;
+    }
+
+    public void setEmpID(int empID) {
+        this.empID = empID;
+    }
+
+    // Getters and Setters for empName
+    public String getEmpName() {
+        return empName;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
+
+    // Getters and Setters for empDesignation
+    public String getEmpDesignation() {
+        return empDesignation;
+    }
+
+    public void setEmpDesignation(String empDesignation) {
+        this.empDesignation = empDesignation;
+    }
+}
+
+public class EmployeeTest {
+    public static void main(String[] args) {
+        // Creating two Employee objects
+        Employee mrBogdan = new Employee();
+        Employee msBird = new Employee();
+
+        // Setting values using setters
+        mrBogdan.setEmpID(1001);
+        mrBogdan.setEmpName("Mr. Bogdan");
+        mrBogdan.setEmpDesignation("Software Engineer");
+
+        msBird.setEmpID(1002);
+        msBird.setEmpName("Ms. Bird");
+        msBird.setEmpDesignation("Project Manager");
+
+        // Printing values using getters
+        System.out.println("Employee ID: " + mrBogdan.getEmpID());
+        System.out.println("Employee Name: " + mrBogdan.getEmpName());
+        System.out.println("Employee Designation: " + mrBogdan.getEmpDesignation());
+
+        System.out.println("Employee ID: " + msBird.getEmpID());
+        System.out.println("Employee Name: " + msBird.getEmpName());
+        System.out.println("Employee Designation: " + msBird.getEmpDesignation());
+    }
+}
+Q2)
+
+public class TestInheritance {
+    public static void main(String[] args) {
+        SuperB b = new SuperB();
+        b.setIt(2);
+        b.increase();
+        b.triple();
+
+        System.out.println(b.returnIt()); // Print the value of x after the operations
+    }
+}
+
+public class TestInheritance {
+    public static void main(String[] args) {
+        SuperB b = new SuperB();
+        b.setIt(2);
+        b.increase();
+        b.triple();
+
+        System.out.println(b.returnIt());
+
+        SubC c = new SubC();
+        c.setIt(2);
+        c.increase();
+        c.triple();
+        System.out.println(c.returnIt());
+    }
+}
+
+Q3)
+
+// Person class (Superclass)
+public class Person {
+    protected String name;
+    protected int id;
+
+    // Constructor for Person class
+    public Person(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+}
+
+// Student class (Subclass)
+public class Student extends Person {
+    private String course;
+
+    // Constructor for Student class
+    public Student(String name, int id, String course) {
+        super(name, id); // Call the constructor of the superclass (Person)
+        this.course = course;
+    }
+
+    // Getter and Setter for course
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+}
+
+// Lecturer class (Subclass)
+public class Lecturer extends Person {
+    private String programme;
+
+    // Constructor for Lecturer class
+    public Lecturer(String name, int id, String programme) {
+        super(name, id); // Call the constructor of the superclass (Person)
+        this.programme = programme;
+    }
+
+    // Getter and Setter for programme
+    public String getProgramme() {
+        return programme;
+    }
+
+    public void setProgramme(String programme) {
+        this.programme = programme;
+    }
+}
+
+public class TestPerson {
+    public static void main(String[] args) {
+        // Create a Student object
+        Student student = new Student("John Doe", 1001, "Computer Science");
+        System.out.println("Student Name: " + student.getName());
+        System.out.println("Student ID: " + student.getId());
+        System.out.println("Student Course: " + student.getCourse());
+
+        // Create a Lecturer object
+        Lecturer lecturer = new Lecturer("Jane Smith", 2001, "Mathematics");
+        System.out.println("Lecturer Name: " + lecturer.getName());
+        System.out.println("Lecturer ID: " + lecturer.getId());
+        System.out.println("Lecturer Programme: " + lecturer.getProgramme());
+    }
+}
+Q4)
+public class Dog extends Mammal {
+    public static void main(String args[]) {
+        Animal a = new Animal();
+        Mammal m = new Mammal();
+        Dog d = new Dog();
+
+        System.out.println(m instanceof Animal);
+        System.out.println(d instanceof Mammal);
+        System.out.println(d instanceof Animal);
+    }
+}
 
